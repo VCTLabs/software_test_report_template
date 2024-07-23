@@ -27,7 +27,7 @@
 
    * - .. class:: title-name
 
-       Software Version Description
+       Software Version Description for
    * - .. class:: title-name
 
        ACME Engineering Evaluation Unit
@@ -38,15 +38,15 @@
 
 .. class:: title-info
 
-Doc #00001043
+Doc Number ACME0081440A
 
 .. class:: title-info
 
-Version 0.1
+Doc Version 0.1
 
 .. class:: title-info
 
-01/24/24
+07/23/24
 
 |
 |
@@ -88,12 +88,8 @@ Document revision history.
      - Description
    * - 0.1
      - SLA
-     - 2024-01-24
+     - 2024-07-23
      - Initial draft shell
-   * - 0.2
-     - SLA
-     - 2024-06-15
-     - Add example CUI marks and distribution statement
 
 
 .. raw:: pdf
@@ -107,7 +103,7 @@ Document revision history.
 
 
 1.1 - Identification
-####################
+~~~~~~~~~~~~~~~~~~~~
 
 This document is the Draft Software Version Description (see revision table)
 for the End-user Management Component of the Advanced ACME Web Services Appliance,
@@ -115,11 +111,11 @@ Engineering Evaluation Unit.
 
 
 1.2 - System Overview
-#####################
+~~~~~~~~~~~~~~~~~~~~~
 
 The Advanced ACME Web Services Appliance is an on-premise virtual Web Services
 cluster with an advanced management interface.  This document provides both the
-Version Description and Installation steps for the Management Console only. The
+Test Description and Test Procedures (steps) for the Management Console only. The
 ACME Web Service high-level system components are shown in Figure 1 below:
 
 .. figure:: images/advanced_acme_web_service.png
@@ -132,25 +128,146 @@ analytics from Spark.
 
 
 1.3 - Document Overview
-#######################
+~~~~~~~~~~~~~~~~~~~~~~~
 
+The purpose of this STD is to describe the test preparations, test
+cases, and test procedures to be used to perform qualification testing
+of the Advanced ACME Web Services Appliance management interface. The
+content and format generally follow the STD Data Item Description
+(DI-IPSC-81439) but includes only the relevant information for an
+engineering evaluation unit.
 
 2.0 Referenced documents
 ========================
 
+:ACME0081443A: `Software User Manual`_ for the Advanced ACME Web Services Appliance
+  Engineering Evaluation Unit, revision 0.0.1, 2023-01-31 [ACME0081443A]_
 
 
-3.0 Test preparations
-=====================
+.. [ACME0081443A]
 
-This section shall be divided into the following paragraphs. Safety
-precautions, marked by WARNING or CAUTION, and security and privacy considerations shall
-be included as applicable.
+.. _Software User Manual: https://github.com/VCTLabs/software_user_manual_template/blob/master/sum/EU_SUM.rst
 
 
-3.x (Project-unique identifier of a test)
-#########################################
+3.0 Overview of test results
+============================
 
+This section is divided into the following paragraphs. Safety
+precautions, marked by WARNING or CAUTION, and security and privacy
+considerations are included where applicable.
+
+3.1 Overall assessment of the software tested
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This paragraph shall:
+
+a. Provide an overall assessment of the software as demonstrated by the test results in this report
+b. Identify any remaining deficiencies, limitations, or constraints that were detected by the
+   testing performed. Problem/change reports may be used to provide deficiency information.
+c. For each remaining deficiency, limitation, or constraint, describe:
+
+     1) Its impact on software and system performance, including identification of requirements not met
+     2) The impact on software and system design to correct it
+     3) A recommended solution/approach for correcting it
+
+3.2 Impact of test environment
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This paragraph shall provide an assessment of the manner in which the
+test environment may be different from the operational environment and
+the effect of this difference on the test results.
+
+3.3 Recommended improvements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This paragraph shall provide any recommended improvements in the
+design, operation, or testing of the software tested. A discussion of
+each recommendation and its impact on the software may be provided. If
+no recommended improve- ments are provided, this paragraph shall state
+"None."
+
+4.0 Detailed test results
+=========================
+
+This section shall be divided into the following paragraphs to describe
+the detailed results for each test. Note: The word "test" means a
+related collection of test cases.
+
+4.x (Project-unique identifier of a test)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This paragraph shall identify a test by project-unique identifier and
+shall be divided into the following subparagraphs to describe the test
+results.
+
+4.x.1 Summary of test results
+-----------------------------
+
+This paragraph shall summarize the results of the test. The summary
+shall include, possibly in a table, the completion status of each test
+case associated with the test (for example, "all results as expected,"
+"problems encountered," "deviations required"). When the completion
+status is not "as expected," this paragraph shall reference the
+following paragraphs for details.
+
+4.x.2 Problems encountered
+--------------------------
+
+This paragraph shall be divided into subparagraphs that identify
+each test case in which one or more problems occurred.
+
+4.x.2.y (Project-unique identifier of a test case)
+##################################################
+
+This paragraph shall identify by project-unique identifier a test case
+in which one or more problems occurred, and shall provide:
+
+a. A brief description of the problem(s) that occurred
+b. Identification of the test procedure step(s) in which they occurred
+c. Reference(s) to the associated problem/change report(s) and backup data, as applicable
+d. The number of times the procedure or step was repeated in attempting to correct the
+   problem(s) and the outcome of each attempt
+e. Back-up points or test steps where tests were resumed for retesting
+
+4.x.3 Deviations from test cases/procedures
+-------------------------------------------
+
+This paragraph shall be divided into subpara- graphs that identify each
+test case in which deviations from test case/test procedures occurred.
+
+4.x.3.y (Project-unique identifier of a test case)
+##################################################
+
+This paragraph shall identify by project-unique identifier a test case
+in which one or more deviations occurred, and shall provide:
+
+a. A description of the deviation(s) (for example, test case run in which the deviation
+   occurred and nature of the deviation, such as substitution of required equipment,
+   procedural steps not followed, schedule deviations). (Red-lined test procedures may be
+   used to show the deviations)
+b. The rationale for the deviation(s)
+c. An assessment of the deviations’ impact on the validity of the test case
+
+5.0 Test log
+============
+
+This section shall present, possibly in a figure or appendix, a chronological record
+of the test events covered by this report. This test log shall include:
+
+a. The date(s), time(s), and location(s) of the tests performed
+b. The hardware and software configurations used for each test including, as applicable,
+   part/model/serial number, manufacturer, revision level, and calibration date of all
+   hardware, and version number and name for the software components used
+c. The date and time of each test-related activity, the identity of the individual(s) who
+   performed the activity, and the identities of witnesses, as applicable
+
+6.0 Notes
+=========
+
+This section shall contain any general information that aids in understanding this
+document (e.g., background information, glossary, rationale). This section shall include an
+alphabetical listing of all acronyms, abbreviations, and their meanings as used in this document
+and a list of any terms and definitions needed to understand this document.
 
 
 Appendix A. Acronyms and abbreviations
