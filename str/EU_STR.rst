@@ -1,4 +1,4 @@
-.. create pdf with "rst2pdf EU_STD.rst -s styles/std.yaml,styles/cui.yaml --use-floating-images -o EU_STD.pdf"
+.. create pdf with "rst2pdf EU_STR.rst -s styles/str.yaml,styles/cui.yaml --use-floating-images -o EU_STD.pdf"
 
 .. class:: title-logobox
 
@@ -196,7 +196,7 @@ or engineering processes.
 :SS/SDD: System/Subsystem/Software Design Descriptions
 :SDP: Software Development Plan
 :STP: Software Test Plan
-:STD: Software Test Description
+:STR: Software Test Description
 :STR: Software Test Report
 :SUT: System Under Test
 :SW: Software

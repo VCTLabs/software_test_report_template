@@ -1,5 +1,5 @@
 ==========================================
- Software Test Description (STD) Template
+ Software Test Description (STR) Template
 ==========================================
 
 |pre|
@@ -15,16 +15,16 @@ This is both a GitHub Template repository *and* a usable template for a
 DID-compliant Software Test Description in reStructuredText_. This repo contains
 the following items:
 
-* A Data Item Descripttion for a Software Test Description (STD)
+* A Data Item Descripttion for a Software Test Description (STR)
   in ASCII text format
-* A DID-compliant STD outline using all the required DID sections (in
+* A DID-compliant STR outline using all the required DID sections (in
   reStructuredText format)
 * Sample document styles for rst2pdf_
 * Sample title-page, logo, and system diagram
 * Python source for the system diagram
 * A tox file and Makefiles (to build things from source)
 
-We use ``make`` and ``rst2pdf`` to build the full STD document, and the diagrams_
+We use ``make`` and ``rst2pdf`` to build the full STR document, and the diagrams_
 tool to generate system architecture and related software diagrams.
 
 .. note:: Currently we use the VCTLabs fork of diagrams in order to have
@@ -41,11 +41,11 @@ Contents after a fresh clone::
   ├── pyproject.toml
   ├── requirements-dia.txt
   ├── resources  # these are references or pre-inputs to the build workflow
-  │   ├── STD_DID_DI-IPSC-81439.txt     # Software Test Description DID
+  │   ├── STR_DID_DI-IPSC-81439.txt     # Software Test Description DID
   │   ├── example-title-page.rst        # example title page source
   │   └── acme_webservice.py            # source code for the example system diagram
-  ├── std
-  │   ├── EU_STD.rst                    # source code for the document/template
+  ├── str
+  │   ├── EU_STR.rst                    # source code for the document/template
   │   ├── Makefile
   │   ├── images                        # graphics sources for document build
   │   │   ├── acme.png
@@ -53,7 +53,7 @@ Contents after a fresh clone::
   │   └── styles                        # old/new format style sheets
   │       ├── rst2pdf.style
   │       ├── cui.yaml
-  │       └── std.yaml
+  │       └── str.yaml
   ├── tox.ini                           # workflow configuration
   └── toxfile.py                        # workflow plugin file
 
@@ -117,24 +117,24 @@ environment descriptions::
   changes        -> Generate full or partial changelog; use git delta syntax for changes-since
 
 
-To build the STD document, run the following 3 workflow commands in the order
+To build the STR document, run the following 3 workflow commands in the order
 shown::
 
   $ tox -e sync   # install repolite and clone the diagram repos to ext/ folder
   $ tox -e gen    # install diagrams and generate the architecture diagram from python source,
-                  # then move the output .png file to STD/images/ folder
+                  # then move the output .png file to STR/images/ folder
   $ tox -e build  # install rst2pdf and build the PDF document from .rst source and .svg/.png images
 
 For extended sessions, use the virtual environment created by the build
 command above for document work::
 
   $ source .tox/build/bin/activate
-  (build) $ $EDITOR std/EU_STD.rst        # make content changes (ie, document source code)
-  (build) $ $EDITOR std/styles/*.style    # make style changes
-  (build) $ $EDITOR std/Makefile          # change rst2pdf args or other build options
+  (build) $ $EDITOR str/EU_STR.rst        # make content changes (ie, document source code)
+  (build) $ $EDITOR str/styles/*.style    # make style changes
+  (build) $ $EDITOR str/Makefile          # change rst2pdf args or other build options
   (build) $ make                          # (re)build PDF document
   (build) $ make clean                    # force a new build, eg, after style changes
-  (build) $ evince std/EU_STD.pdf         # view rendered document
+  (build) $ evince str/EU_STR.pdf         # view rendered document
   (build) $ deactivate                    # exit the virtual environment
 
 Similarly, use the virtual environment created by the ``gen`` command for
@@ -153,7 +153,7 @@ Points to note:
 * run ``tox -e clean,build`` any time to view a fresh PDF
 
 In addition to the ``gen`` command, the default makefiles will also build diagrams
-from ``.dot`` code if you drop a (graphviz) dot file in the ``STD/images/`` folder
+from ``.dot`` code if you drop a (graphviz) dot file in the ``STR/images/`` folder
 and use the resulting ``.svg`` file in your ``.rst`` source document.
 
 
@@ -186,7 +186,7 @@ something like::
 
 then install the hooks into the repo you just created from the template::
 
-  $ cd your_new_STD_repo/
+  $ cd your_new_STR_repo/
   $ pre-commit install
 
 It's usually a good idea to update the hooks to the latest version::

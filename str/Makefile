@@ -1,15 +1,15 @@
 # document build target (see corresponding .rst source file)
-STD = EU_STD.pdf
+STR = EU_STD.pdf
 
 # just one pdf doc target for now
-DOCS = $(STD)
+DOCS = $(STR)
 
 # figure generation engine; can use other layouts/drivers
 DOT = dot
 
 # input files
 DOTSRC  := $(wildcard images/*.dot)
-STDSRC = EU_STD.rst
+STRSRC = EU_STD.rst
 
 #DOCTYPE = pdf
 # set this to the output image format to include in the doc target
@@ -19,12 +19,12 @@ FIGTYPE = svg
 FIGS := $(DOTSRC:.dot=.$(FIGTYPE))
 
 # input files for DOC target
-SOURCES_MK	:= $(STDSRC) $(FIGS)
+SOURCES_MK	:= $(STRSRC) $(FIGS)
 # stuff to clean
 GENFILES	:= $(FIGS)
 
 DOTFLAGS = -T$(FIGTYPE)
-RSTFLAGS = -s styles/std.yaml,styles/cui.yaml --use-floating-images
+RSTFLAGS = -s styles/str.yaml,styles/cui.yaml --use-floating-images
 DOT_OFLAG = -o
 PDF_OFLAG = -o
 
@@ -37,7 +37,7 @@ images/%.$(FIGTYPE) : images/%.dot
 	$(DOT) $< $(DOT_OFLAG) $@ $(DOTFLAGS)
 
 # build the pdf output
-$(STD) : $(STDSRC)
+$(STR) : $(STDSRC)
 	rst2pdf $< $(RSTFLAGS) $(PDF_OFLAG) $@
 
 all : $(DOCS)
