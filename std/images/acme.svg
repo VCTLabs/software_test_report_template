@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="5.1715274in"
+   height="2.2065248in"
+   viewBox="0 0 265.95058 113.47258"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="acme.svg"
+   inkscape:export-filename="acme.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="pt"
+     showgrid="false"
+     inkscape:zoom="0.733172"
+     inkscape:cx="323.25293"
+     inkscape:cy="-75.016504"
+     inkscape:window-width="1260"
+     inkscape:window-height="873"
+     inkscape:window-x="336"
+     inkscape:window-y="44"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="206.51874"
+       y="155.31693"
+       width="980.69171"
+       height="533.81842"
+       id="rect113" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-125.91882,-222.15929)">
+    <rect
+       style="font-variation-settings:'wght' 600;fill:#ff2a2a;stroke-width:0.264583"
+       id="rect331"
+       width="265.95059"
+       height="113.47259"
+       x="125.91882"
+       y="222.15929" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text111"
+       style="font-size:96px;white-space:pre;shape-inside:url(#rect113);display:inline;fill:#000000" />
+    <text
+       xml:space="preserve"
+       style="font-size:104.923px;fill:#ffd5d5;stroke-width:0.546473"
+       x="157.79398"
+       y="276.0773"
+       id="text119"
+       transform="scale(0.86004807,1.1627257)"><tspan
+         sodipodi:role="line"
+         id="tspan117"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:105.833px;font-family:Cantarell;-inkscape-font-specification:'Cantarell, @wght=600';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 600;fill:#ffd5d5;stroke-width:0.546473"
+         x="157.79398"
+         y="276.0773">ACME</tspan></text>
+  </g>
+</svg>

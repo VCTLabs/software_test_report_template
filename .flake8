@@ -1,0 +1,11 @@
+[flake8]
+exclude =
+    .git,
+    __pycache__,
+    tests,
+    build,
+    dist,
+    .tox
+
+max-line-length = 90
+addons = file,open,basestring,xrange,unicode,long,cmp

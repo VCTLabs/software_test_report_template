@@ -1,0 +1,10 @@
+black
+graphviz
+jinja2
+# external requirements
+#  round
+#  graphviz
+#  inkscape
+#  imagemagick/graphicsmagick
+#  ttf-opensans fontconfig xdg-utils
+poetry

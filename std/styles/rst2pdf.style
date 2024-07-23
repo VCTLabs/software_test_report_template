@@ -1,0 +1,65 @@
+{
+  "pageSetup" : {
+     "size" : "Letter",
+     "margin-top" : "1cm"
+  },
+
+  "styles" : [
+    ["normal", {
+     "allowWidows" : 5,
+     "allowOrphans" : 6
+    }],
+
+    ["title-name" , {
+      "comment": "large, right-aligned text for title page document name",
+      "parent": "bodytext",
+      "alignment": "TA_RIGHT",
+      "fontSize": "200%",
+      "fontName": "stdBold"
+    }],
+
+    ["title-info" , {
+      "comment": "right-aligned text for title page document info",
+      "parent": "bodytext",
+      "spaceBefore": 0,
+      "alignment": "TA_RIGHT"
+    }],
+
+    ["title-notice" , {
+      "comment": "bold, justified text for title page notice",
+      "parent": "bodytext",
+      "alignment": "TA_JUSTIFY",
+      "fontName": "stdBold"
+    }],
+
+    ["title-logobox", {
+      "comment": "box with uniform thin line",
+      "comment": "padding to try to even up spacing",
+      "parent": "table",
+      "commands" : [
+                            [ "BOX", [ 0, 0 ], [ -1, -1 ], 0.5, "black" ],
+                            [ "TOPPADDING", [ 0, 0 ], [ -1, 0 ], 0],
+                            [ "LEFTPADDING", [ 0, 0 ], [ 0, -1 ], 8],
+                            [ "BOTTOMPADDING", [ 0, -1 ], [ -1, -1 ], 3]
+                   ]
+    }],
+
+    ["title-deepbox", {
+      "comment": "box with thicker line for right and bottom",
+      "comment": "padding inside box, but not between table cells",
+      "parent": "table",
+      "commands" : [
+                            [ "LINEABOVE", [ 0, 0 ], [ -1, 0 ], 1, "black" ],
+                            [ "LINEBEFORE", [ 0, 0 ], [ 0, -1 ], 1, "black" ],
+                            [ "LINEAFTER", [ -1, 0 ], [ -1, -1 ], 2, "black" ],
+                            [ "LINEBELOW", [ 0, -1 ], [ -1, -1 ], 2, "black" ],
+                            [ "TOPPADDING", [ 0, 0 ], [ -1, 0 ], 10],
+                            [ "LEFTPADDING", [ 0, 0 ], [ 0, -1 ], 10],
+                            [ "RIGHTPADDING", [ -1, 0 ], [ -1, -1 ], 10],
+                            [ "BOTTOMPADDING", [ 0, -1 ], [ -1, -1 ], 10],
+                            [ "TOPPADDING", [ 0, 1 ], [ -1, -1 ], 0],
+                            [ "BOTTOMPADDING", [ 0, 0 ], [ -1, -2 ], 0]
+                   ]
+    }]
+  ]
+}

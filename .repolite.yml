@@ -1,0 +1,31 @@
+prog_name: repolite
+top_dir: ext  # local directory path for enabled repositories
+pull_with_rebase: false  # use --ff-only if false
+# add new repo_name sections as needed
+repos:
+  - repo_name: diagrams
+    repo_alias: null
+    repo_url: https://github.com/VCTLabs/diagrams.git
+    repo_depth: 0
+    repo_remote: origin
+    repo_opts: []
+    repo_branch: embedded-systems
+    repo_hash: null
+    repo_use_rebase: false
+    repo_has_lfs_files: false
+    repo_init_submodules: false
+    repo_install: true
+    repo_enable: true
+  - repo_name: affinity
+    repo_alias: null
+    repo_url: https://github.com/VCTLabs/affinity.git
+    repo_depth: 0
+    repo_remote: origin
+    repo_opts: []
+    repo_branch: categories
+    repo_hash: null
+    repo_use_rebase: false
+    repo_has_lfs_files: false
+    repo_init_submodules: false
+    repo_install: false
+    repo_enable: true
