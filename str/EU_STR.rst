@@ -27,10 +27,10 @@
 
    * - .. class:: title-name
 
-       Software Version Description for
+       Software Version Description for Advanced ACME Web Services Appliance
    * - .. class:: title-name
 
-       ACME Engineering Evaluation Unit
+       Engineering Evaluation Unit
 
 |
 |
@@ -140,12 +140,15 @@ engineering evaluation unit.
 2.0 Referenced documents
 ========================
 
+:ACME0081439A: `Software Test Description`_ for the Advanced ACME Web Services Appliance
+  Engineering Evaluation Unit, revision 0.0.1, 2024-07-23 [ACME0081439A]_
 :ACME0081443A: `Software User Manual`_ for the Advanced ACME Web Services Appliance
   Engineering Evaluation Unit, revision 0.0.1, 2023-01-31 [ACME0081443A]_
 
-
+.. [ACME0081439A]
 .. [ACME0081443A]
 
+.. _Software Test Description: https://github.com/VCTLabs/software_test_description_template/blob/master/std/EU_STD.rst
 .. _Software User Manual: https://github.com/VCTLabs/software_user_manual_template/blob/master/sum/EU_SUM.rst
 
 
