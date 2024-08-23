@@ -11,9 +11,11 @@
 What is this thing?
 ===================
 
-This is both a GitHub Template repository *and* a usable template for a
+This is both a GitHub Template repository *and* a usable template for a MIL-STD-498_
 DID-compliant Software Test Description in reStructuredText_. This repo contains
 the following items:
+
+.. _MIL-STD-498: https://github.com/VCTLabs/MIL-STD-498
 
 * A Data Item Descripttion for a Software Test Description (STR)
   in ASCII text format
